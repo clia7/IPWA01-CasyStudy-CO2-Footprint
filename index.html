@@ -69,7 +69,7 @@
                     <img src="img/heroimg_2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="img/heroimg_3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#heroslider" data-bs-slide="prev">
@@ -101,8 +101,8 @@
             
             <div class="team_content p-5">
                 <h2>Our Team</h2>
-                <div class="teamcards d-flex ">
-                <div class="card mx-5" style="width: 20rem;">
+                <div class="teamcards d-flex">
+                <div class="card mx-2" style="width: 20rem;">
                     <img src="img/persona1.png" class="card-img-top" alt="illustration of a woman">
                     <div class="card-body">
                         <h3>Lea Santos – Data Analyst</h3>
@@ -112,7 +112,7 @@
                             accessible for everyone.</p>
                     </div>
                 </div>
-                <div class="card mx-5" style="width: 20rem;">
+                <div class="card mx-2" style="width: 20rem;">
                     <img src="img/persona2.png" class="card-img-top" alt="illustration of a man">
                     <div class="card-body">
                         <h3>Jonas Weber – Project Coordinator</h3>
@@ -122,7 +122,7 @@
                             developments.</p>
                     </div>
                 </div>
-                <div class="card mx-5" style="width: 20rem;">
+                <div class="card mx-2" style="width: 20rem;">
                     <img src="img/persona3.png" class="card-img-top" alt="illustration of a woman">
                     <div class="card-body">
                         <h3>Nora Takahashi – Design & UX Lead</h3>
@@ -140,6 +140,7 @@
         <section id="information">
             <div class ="information_content m-5">
             <h2>What is CO₂?</h2>
+            <img src="img/carboncycle.jpg" alt="" height="200px">
             <p>Carbon dioxide (CO₂) is a naturally occurring gas composed of one carbon atom and two oxygen atoms. It is
                 colorless, odorless, and exists in the Earth’s atmosphere in small concentrations. Although it is a
                 minor component of the air we breathe, it plays a crucial role in the planet’s climate </p>
@@ -182,6 +183,72 @@
         <section id="dataOverview">
             <div class="dataOverview_content m-5">
             <h2>Data Overview</h2>
+            <input type="text" id="filterInput" onkeyup="filterfunction()" placeholder="Search for names...">
+            <table id="emissionTable" class="table table-bordered">
+                    <tr>
+                        <th>Country</th>
+                        <th>Company</th>
+                        <th>Sector</th>
+                        <th>Emission in MT</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Brazil</td>
+                        <td>SkyReach</td>
+                        <td>Finance</td>
+                        <td>60.85</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Canada</td>
+                        <td>UrbanMove</td>
+                        <td>Aerospace</td>
+                        <td>31.34</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Germany</td>
+                        <td>AutoTech AG</td>
+                        <td>Transport</td>
+                        <td>96.29</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Canada</td>
+                        <td>SteelDragon Ltd.</td>
+                        <td>Transport</td>
+                        <td>79.61</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Australia</td>
+                        <td>ByteEnergy</td>
+                        <td>Automotive</td>
+                        <td>61.24</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>India</td>
+                        <td>GreenPower Inc.</td>
+                        <td>Technology</td>
+                        <td>95.77</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>China</td>
+                        <td>VoltTech</td>
+                        <td>Pharmaceuticals</td>
+                        <td>61.54</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>AutoTech AG</td>
+                        <td>Automotive</td>
+                        <td>90.74</td>
+                        <td>2022</td>
+                    </tr>
+            </table>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint reprehenderit perferendis
                 temporibus. Ipsa illum dolor neque doloribus a ratione tempore quisquam, unde repudiandae inventore
                 aspernatur omnis assumenda in reprehenderit sed, placeat eligendi voluptate sit rerum dignissimos non
@@ -197,6 +264,7 @@
         <section id="collectingData">
             <div class="collectingData_content m-5">
             <h2>How We Collect Data</h2>
+            <img src="img/datacollection.jpg" alt="" height="200px">
             <p>At Green Trace, we are committed to transparency and accuracy. Our emissions data is compiled from a
                 combination of publicly available sources, international databases, and verified third-party reports.
             </p>
@@ -238,13 +306,9 @@
                
         </section>
     </main>
-
-
-
-</body>
-<footer> <!--FOOTER-->
+    <footer> <!--FOOTER-->
         <a href="#">Privacy Policy</a>
         <a href="#">Legal Notice</a>
 </footer>
-
+</body>
 </html>

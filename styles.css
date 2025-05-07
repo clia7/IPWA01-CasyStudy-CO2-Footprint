@@ -1,17 +1,8 @@
 html {
     scroll-behavior: smooth;
 }
-
-
-h1 {
-    font-size: 3em;
-    font-weight: bold;
+h1, h2 {
     text-align: center;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 1.5em;
 }
 
 /*NAVIGATION*/
