@@ -82,10 +82,10 @@
             </button>
         </div>
 
-        <h1>Green Trace</h1>
+        <h1 class="display-1">Green Trace</h1>
         <section id="aboutus">
             <div class="aboutus_content m-5">
-                <p>is a non-profit organization dedicated to increasing transparency in the global fight
+                <p>We are non-profit organization dedicated to increasing transparency in the global fight
                     against climate change. We believe that access to clear, reliable data on CO₂ emissions is essential
                     for accountability and progress.</p>
 
@@ -183,8 +183,9 @@
         <section id="dataOverview">
             <div class="dataOverview_content m-5">
             <h2>Data Overview</h2>
-            <input type="text" id="filterInput" onkeyup="filterfunction()" placeholder="Search for names...">
-            <table id="emissionTable" class="table table-bordered">
+            
+            <input type="text" id="filterInput" onkeyup="filterfunction()" placeholder="Search for a Country...">
+            <table id="emissionTable" class="table table-bordered table-responsive">
                     <tr>
                         <th>Country</th>
                         <th>Company</th>
@@ -293,15 +294,21 @@
 
         <section id="contact">
             <div class="contact_content m-5">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae aspernatur officia dolores
-                voluptas! Obcaecati, dolorum perferendis! Neque, officia perspiciatis optio esse soluta consequuntur?
-                Quae porro pariatur facere unde vel harum, doloribus id quos officia magnam molestiae assumenda suscipit
-                rem error est earum odio qui maiores minima cum sed laudantium aperiam. Quis eveniet nulla ullam
-                pariatur, distinctio, possimus amet ex perferendis voluptatum esse et rem labore voluptatem dolor magnam
-                dolore fugiat at sapiente adipisci. Iure quam ipsa eligendi laboriosam odit explicabo iste illum
-                incidunt ab hic harum reprehenderit illo minus, culpa minima veniam beatae in ea! Culpa, et! Sequi,
-                dicta?</p>
+            <h2>Get in Touch</h2>
+            <p>Have questions, feedback, or want to collaborate?
+                We’d love to hear from you! Just fill out the form below and we’ll get back to you as soon as possible.</p>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="post">
+                <div class="m-5">
+                    <label for="exampleFormControlInput1" class="form-label">Your Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="m-5">
+                    <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </form>
             </div>
                
         </section>
