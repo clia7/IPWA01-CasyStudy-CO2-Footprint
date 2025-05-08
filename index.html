@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script> <!--BOOTSTRAP SCRIPT FOR SLIDER-->
-    <script src="script.js"></script> <!--OWN SCRIPT-->
+    
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <li class="hideOneMobile"><a href="#collectingData">How We Collect Data</a></li>
             <li class="hideOneMobile"><a href="#contact">Contact</a></li>
             <li class="menu_btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                        height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
+                        height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000">
                         <path
                             d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
                     </svg></a></li>
@@ -38,7 +38,7 @@
 
         <ul class="sidebar"> <!--MOBILE NAVIGATION-->
             <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px"
-                        viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
+                        viewBox="0 -960 960 960" width="40px" fill="#000000">
                         <path
                             d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
                     </svg></a></li>
@@ -98,224 +98,187 @@
                     and policymakers to make informed decisions and take meaningful climate action.
                     Together, we can trace emissions — and drive change.</p>
             </div>
-            
+
             <div class="team_content p-5">
                 <h2>Our Team</h2>
-                <div class="teamcards d-flex">
-                <div class="card mx-2" style="width: 20rem;">
-                    <img src="img/persona1.png" class="card-img-top" alt="illustration of a woman">
-                    <div class="card-body">
-                        <h3>Lea Santos – Data Analyst</h3>
-                        <p class="card-text">Lea is passionate about turning numbers into meaningful insights. With a
-                            background in environmental science and data visualization, she’s responsible for analyzing
-                            and structuring CO₂ data from global sources. Her mission: making complex data simple and
-                            accessible for everyone.</p>
+                <div class="teamcards d-flex justify-content-center">
+                    <div class="card mx-2" style="width: 20rem;">
+                        <img src="img/persona1.png" class="card-img-top" alt="illustration of a woman">
+                        <div class="card-body">
+                            <h3>Lea Santos – Data Analyst</h3>
+                            <p class="card-text">Lea is passionate about turning numbers into meaningful insights. With
+                                a
+                                background in environmental science and data visualization, she’s responsible for
+                                analyzing
+                                and structuring CO₂ data from global sources. Her mission: making complex data simple
+                                and
+                                accessible for everyone.</p>
+                        </div>
+                    </div>
+                    <div class="card mx-2" style="width: 20rem;">
+                        <img src="img/persona2.png" class="card-img-top " alt="illustration of a man">
+                        <div class="card-body">
+                            <h3>Jonas Weber – Project Coordinator</h3>
+                            <p class="card-text">Jonas keeps the team and project on track. With a background in
+                                nonprofit
+                                management and communication, he connects partners, oversees timelines, and ensures the
+                                Green Trace platform continuously evolves in response to user feedback and climate data
+                                developments.</p>
+                        </div>
+                    </div>
+                    <div class="card mx-2" style="width: 20rem;">
+                        <img src="img/persona3.png" class="card-img-top" alt="illustration of a woman">
+                        <div class="card-body">
+                            <h3>Nora Takahashi – Design & UX Lead</h3>
+                            <p class="card-text">Nora brings life to the user experience of Green Trace. With a strong
+                                focus
+                                on accessibility and clarity, she ensures that users can navigate the platform with ease
+                                across all devices. Her minimalist design approach keeps the focus on what truly
+                                matters:
+                                transparency and impact.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="card mx-2" style="width: 20rem;">
-                    <img src="img/persona2.png" class="card-img-top" alt="illustration of a man">
-                    <div class="card-body">
-                        <h3>Jonas Weber – Project Coordinator</h3>
-                        <p class="card-text">Jonas keeps the team and project on track. With a background in nonprofit
-                            management and communication, he connects partners, oversees timelines, and ensures the
-                            Green Trace platform continuously evolves in response to user feedback and climate data
-                            developments.</p>
-                    </div>
-                </div>
-                <div class="card mx-2" style="width: 20rem;">
-                    <img src="img/persona3.png" class="card-img-top" alt="illustration of a woman">
-                    <div class="card-body">
-                        <h3>Nora Takahashi – Design & UX Lead</h3>
-                        <p class="card-text">Nora brings life to the user experience of Green Trace. With a strong focus
-                            on accessibility and clarity, she ensures that users can navigate the platform with ease
-                            across all devices. Her minimalist design approach keeps the focus on what truly matters:
-                            transparency and impact.
-                        </p>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
 
         <section id="information">
-            <div class ="information_content m-5">
-            <h2>What is CO₂?</h2>
-            <img src="img/carboncycle.jpg" alt="" height="200px">
-            <p>Carbon dioxide (CO₂) is a naturally occurring gas composed of one carbon atom and two oxygen atoms. It is
-                colorless, odorless, and exists in the Earth’s atmosphere in small concentrations. Although it is a
-                minor component of the air we breathe, it plays a crucial role in the planet’s climate </p>
+            <div class="information_content m-5">
+                <h2>What is CO₂?</h2>
+                <img src="img/carboncycle.jpg" alt="" height="200px">
+                <p>Carbon dioxide (CO₂) is a naturally occurring gas composed of one carbon atom and two oxygen atoms.
+                    It is
+                    colorless, odorless, and exists in the Earth’s atmosphere in small concentrations. Although it is a
+                    minor component of the air we breathe, it plays a crucial role in the planet’s climate </p>
 
-            <h3>Where does CO₂ come from?</h3>
+                <h3>Where does CO₂ come from?</h3>
 
-            <p>CO₂ is released into the atmosphere through both natural and human-made processes:</p>
-            <p>Natural Sources</p>
-            <ul>
-                <li>Volcanic eruptions</li>
-                <li>Respiration by animals and humans</li>
-                <li>Decomposition of organic matter</li>
-                <li>Ocean release</li>
-            </ul>
+                <p>CO₂ is released into the atmosphere through both natural and human-made processes:</p>
+                <p>Natural Sources</p>
+                <ul>
+                    <li>Volcanic eruptions</li>
+                    <li>Respiration by animals and humans</li>
+                    <li>Decomposition of organic matter</li>
+                    <li>Ocean release</li>
+                </ul>
 
-            <p>Human Activities (Anthropogenic Sources)</p>
-            <ul>
-                <li>Burning fossil fuels (coal, oil, gas) for energy and transport</li>
-                <li>Deforestation (trees absorb CO₂; fewer trees = more CO₂ in the atmosphere)</li>
-                <li>Industrial processes (cement production, chemical manufacturing)</li>
-            </ul>
+                <p>Human Activities (Anthropogenic Sources)</p>
+                <ul>
+                    <li>Burning fossil fuels (coal, oil, gas) for energy and transport</li>
+                    <li>Deforestation (trees absorb CO₂; fewer trees = more CO₂ in the atmosphere)</li>
+                    <li>Industrial processes (cement production, chemical manufacturing)</li>
+                </ul>
 
-            <h3>Why does CO₂ matter?</h3>
+                <h3>Why does CO₂ matter?</h3>
 
-            <p>CO₂ is a greenhouse gas, meaning it traps heat in the Earth’s atmosphere. While this is necessary to keep
-                the planet warm enough for life, excessive CO₂ from human activities has intensified the greenhouse
-                effect, leading to global warming and climate change.</p>
+                <p>CO₂ is a greenhouse gas, meaning it traps heat in the Earth’s atmosphere. While this is necessary to
+                    keep
+                    the planet warm enough for life, excessive CO₂ from human activities has intensified the greenhouse
+                    effect, leading to global warming and climate change.</p>
 
-            <h3>How can we reduce CO₂ emissions?</h3>
-            <ul>
-                <li>Switching to renewable energy (solar, wind, hydro)</li>
-                <li>Improving energy efficiency</li>
-                <li>Using public transportation or cycling</li>
-                <li>Planting trees and protecting forests</li>
-                <li>Supporting carbon-neutral or low-emission products</li>
-            </ul>
-        </div>
+                <h3>How can we reduce CO₂ emissions?</h3>
+                <ul>
+                    <li>Switching to renewable energy (solar, wind, hydro)</li>
+                    <li>Improving energy efficiency</li>
+                    <li>Using public transportation or cycling</li>
+                    <li>Planting trees and protecting forests</li>
+                    <li>Supporting carbon-neutral or low-emission products</li>
+                </ul>
+            </div>
         </section>
 
         <section id="dataOverview">
             <div class="dataOverview_content m-5">
-            <h2>Data Overview</h2>
-            
-            <input type="text" id="filterInput" onkeyup="filterfunction()" placeholder="Search for a Country...">
-            <table id="emissionTable" class="table table-bordered table-responsive">
-                    <tr>
+                <h2>Data Overview</h2>
+                <p>
+                    This section provides a snapshot of CO₂ emissions from fictional companies across various countries
+                    and sectors.
+                    The table below includes data such as the company name, industry sector, and total emissions
+                    measured in metric tons (MT) for specific years.
+                    Use the search bar to quickly filter results by country and explore how different industries
+                    contribute to global emissions.
+                    This overview serves as a starting point for identifying trends, making comparisons, and raising
+                    awareness about the environmental impact of corporate activities worldwide.
+                </p>
+                <p>
+                    Below is a dataset showcasing fictional CO₂ emissions by companies from different countries and sectors between 2021 and 2023.
+                </p>
+                <input type="text" id="filterInput" onkeyup="filterfunction()" placeholder="Search for...">
+                <table id="emissionTable" class="table table-bordered table-responsive justify-content-center">
+                    <thead>
                         <th>Country</th>
                         <th>Company</th>
                         <th>Sector</th>
                         <th>Emission in MT</th>
                         <th>Year</th>
-                    </tr>
-                    <tr>
-                        <td>Brazil</td>
-                        <td>SkyReach</td>
-                        <td>Finance</td>
-                        <td>60.85</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr>
-                        <td>Canada</td>
-                        <td>UrbanMove</td>
-                        <td>Aerospace</td>
-                        <td>31.34</td>
-                        <td>2023</td>
-                    </tr>
-                    <tr>
-                        <td>Germany</td>
-                        <td>AutoTech AG</td>
-                        <td>Transport</td>
-                        <td>96.29</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr>
-                        <td>Canada</td>
-                        <td>SteelDragon Ltd.</td>
-                        <td>Transport</td>
-                        <td>79.61</td>
-                        <td>2023</td>
-                    </tr>
-                    <tr>
-                        <td>Australia</td>
-                        <td>ByteEnergy</td>
-                        <td>Automotive</td>
-                        <td>61.24</td>
-                        <td>2022</td>
-                    </tr>
-                    <tr>
-                        <td>India</td>
-                        <td>GreenPower Inc.</td>
-                        <td>Technology</td>
-                        <td>95.77</td>
-                        <td>2023</td>
-                    </tr>
-                    <tr>
-                        <td>China</td>
-                        <td>VoltTech</td>
-                        <td>Pharmaceuticals</td>
-                        <td>61.54</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr>
-                        <td>Japan</td>
-                        <td>AutoTech AG</td>
-                        <td>Automotive</td>
-                        <td>90.74</td>
-                        <td>2022</td>
-                    </tr>
-            </table>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint reprehenderit perferendis
-                temporibus. Ipsa illum dolor neque doloribus a ratione tempore quisquam, unde repudiandae inventore
-                aspernatur omnis assumenda in reprehenderit sed, placeat eligendi voluptate sit rerum dignissimos non
-                facilis officia dicta! Fugit, rem. Iusto soluta doloremque odio error atque, ea odit, rem aspernatur
-                dicta sit minima, quisquam similique nam! Minima perspiciatis voluptas laboriosam non sit sequi,
-                architecto eius eveniet quis beatae facere. Asperiores quisquam reprehenderit quasi delectus qui minima
-                vero voluptatem ipsam voluptatibus perferendis. Itaque eum commodi sint temporibus incidunt autem,
-                inventore ratione aliquam sapiente illum, modi accusamus tempora laudantium.
-            </p>
-        </div>
+                    </thead>
+                    <tbody id="tableData">
+
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <section id="collectingData">
             <div class="collectingData_content m-5">
-            <h2>How We Collect Data</h2>
-            <img src="img/datacollection.jpg" alt="" height="200px">
-            <p>At Green Trace, we are committed to transparency and accuracy. Our emissions data is compiled from a
-                combination of publicly available sources, international databases, and verified third-party reports.
-            </p>
-
-
-            <h3>We collect and process data from the following key sources:</h3>
-            <ul>
-                <li>Governmental Reports: National environmental agencies and statistical offices provide annual CO₂
-                    emission figures, which we monitor and update regularly.</li>
-                <li>Corporate Disclosures: We analyze sustainability and environmental reports published by corporations
-                    across various industries. Only verified and published figures are used.</li>
-                <li>Scientific Databases: We access reputable climate research institutions and global monitoring
-                    projects such as the Global Carbon Project and UNFCCC databases.</li>
-                <li>Automated Web Crawlers: Our systems use ethical web scraping techniques to identify updates and new
-                    publications from recognized sources.</li>
-            </ul>
-            <p>All collected data undergoes a multi-step validation process before being published. This includes
-                cross-referencing with other sources, checking for inconsistencies, and flagging outliers. We are
-                constantly
-                refining our methods to ensure the information presented is both up-to-date and reliable.</p>
-
-            <p>Our goal is to empower the public, researchers, and policymakers with clear and trustworthy data to drive
-                real climate action.</p>
+                <h2>How We Collect Data</h2>
+                <img src="img/datacollection.jpg" alt="" height="200px">
+                <p>At Green Trace, we are committed to transparency and accuracy. Our emissions data is compiled from a
+                    combination of publicly available sources, international databases, and verified third-party
+                    reports.
+                </p>
+                <h3>We collect and process data from the following key sources:</h3>
+                <ul>
+                    <li>Governmental Reports: National environmental agencies and statistical offices provide annual CO₂
+                        emission figures, which we monitor and update regularly.</li>
+                    <li>Corporate Disclosures: We analyze sustainability and environmental reports published by
+                        corporations
+                        across various industries. Only verified and published figures are used.</li>
+                    <li>Scientific Databases: We access reputable climate research institutions and global monitoring
+                        projects such as the Global Carbon Project and UNFCCC databases.</li>
+                    <li>Automated Web Crawlers: Our systems use ethical web scraping techniques to identify updates and
+                        new
+                        publications from recognized sources.</li>
+                </ul>
+                <p>All collected data undergoes a multi-step validation process before being published. This includes
+                    cross-referencing with other sources, checking for inconsistencies, and flagging outliers. We are
+                    constantly
+                    refining our methods to ensure the information presented is both up-to-date and reliable.</p>
+                <p>Our goal is to empower the public, researchers, and policymakers with clear and trustworthy data to
+                    drive
+                    real climate action.</p>
             </div>
         </section>
 
         <section id="contact">
             <div class="contact_content m-5">
-            <h2>Get in Touch</h2>
-            <p>Have questions, feedback, or want to collaborate?
-                We’d love to hear from you! Just fill out the form below and we’ll get back to you as soon as possible.</p>
+                <h2>Get in Touch</h2>
+                <p>Have questions, feedback, or want to collaborate?
+                    We’d love to hear from you! Just fill out the form below and we’ll get back to you as soon as
+                    possible.</p>
             </div>
             <div class="contact-form">
                 <form action="#" method="post">
-                <div class="m-5">
-                    <label for="exampleFormControlInput1" class="form-label">Your Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="m-5">
-                    <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
+                    <div class="m-5">
+                        <label for="exampleFormControlInput1" class="form-label">Your Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="m-5">
+                        <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
                 </form>
             </div>
-               
         </section>
+
+        <script src="script.js"></script> <!--OWN SCRIPT-->
     </main>
     <footer> <!--FOOTER-->
         <a href="#">Privacy Policy</a>
         <a href="#">Legal Notice</a>
-</footer>
+    </footer>
 </body>
+
 </html>

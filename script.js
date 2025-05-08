@@ -43,3 +43,24 @@ function showSidebar() {
       tr[i].style.display = rowMatches ? "" : "none";
     }
   }
+
+  // INSERT JSON DATA INTO HTML TABLE
+  fetch('co2_emissions_data.json')
+    .then(response => response.json())
+    .then(data => {
+        const tableData = document.getElementById("tableData");
+
+        data.forEach(entry => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${entry.country}</td>
+            <td>${entry.company}</td>
+            <td>${entry.sector}</td>
+            <td>${entry.emissions_mt}</td>
+            <td>${entry.year}</td>
+            `;
+
+            tableData.appendChild(row);
+        });
+    })
+    .catch(error => console.error('Error loading JSON:', error));
