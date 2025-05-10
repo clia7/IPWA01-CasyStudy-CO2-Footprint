@@ -12,6 +12,27 @@
         }
     });
 
+
+//BACK TO TOP BUTTON
+let back_btn = document.getElementById("back_btn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+ if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  back_btn.style.display = "block";
+ } else {
+  back_btn.style.display = "none";
+ }
+}
+
+function topFunction() {
+ window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+ });
+}
+
   //SEARCH TABLE
   function filterfunction() {
     var input, filter, table, tr, td, i, j, txtValue, rowMatches;
