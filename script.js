@@ -1,5 +1,18 @@
 'use strict';
-  //FILTER FOR TABLE
+
+//NAVBAR
+    document.addEventListener('click', function (event) {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        const isClickInsideNavbar = navbarCollapse.contains(event.target) || navbarToggler.contains(event.target);
+
+        if (!isClickInsideNavbar && navbarCollapse.classList.contains('show')) {
+            navbarToggler.click(); 
+        }
+    });
+
+  //SEARCH TABLE
   function filterfunction() {
     var input, filter, table, tr, td, i, j, txtValue, rowMatches;
     input = document.getElementById("filterInput");
@@ -43,3 +56,35 @@
         });
     })
     .catch(error => console.error('Error loading JSON:', error));
+
+
+    // FILTER TABLE
+let sortDirection = {};
+
+function sortFunction(columnIndex) {
+  const table = document.getElementById("emissionTable");
+  const tbody = table.tBodies[0];
+  const rows = Array.from(tbody.rows);
+
+  sortDirection[columnIndex] = !sortDirection[columnIndex];
+
+  rows.sort((a, b) => {
+    let valA = a.cells[columnIndex].innerText.trim();
+    let valB = b.cells[columnIndex].innerText.trim();
+
+
+    let numA = parseFloat(valA.replace(/,/g, ""));
+    let numB = parseFloat(valB.replace(/,/g, ""));
+    let isNumeric = !isNaN(numA) && !isNaN(numB);
+
+    if (isNumeric) {
+      return sortDirection[columnIndex] ? numA - numB : numB - numA;
+    } else {
+      return sortDirection[columnIndex]
+        ? valA.localeCompare(valB)
+        : valB.localeCompare(valA);
+    }
+  });
+
+  rows.forEach(row => tbody.appendChild(row));
+}

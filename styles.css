@@ -24,6 +24,10 @@ p {
     object-fit: cover;
 }
 
+.card:hover{
+    transform: scale(1.05);
+}
+
 footer a {
     text-decoration: none;
     color: white;
