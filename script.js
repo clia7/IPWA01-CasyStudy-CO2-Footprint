@@ -33,6 +33,19 @@ function topFunction() {
  });
 }
 
+//SWITCH DIRECTION
+const rtlLangs = ['ar', 'he', 'fa', 'ur'];
+const userLang = navigator.language || navigator.userLanguage;
+
+if (rtlLangs.some(code => userLang.startsWith(code))) {
+  document.documentElement.setAttribute("dir", "rtl");
+  document.documentElement.setAttribute("lang", userLang);
+} else {
+  document.documentElement.setAttribute("dir", "ltr");
+  document.documentElement.setAttribute("lang", userLang);
+}
+
+
   //SEARCH TABLE
   function filterfunction() {
     var input, filter, table, tr, td, i, j, txtValue, rowMatches;
@@ -108,4 +121,71 @@ function sortFunction(columnIndex) {
   });
 
   rows.forEach(row => tbody.appendChild(row));
+}
+
+//FORM VALIDATIOM
+const regMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+const inputMail = document.querySelector('#email');
+const errorDivMail = inputMail.nextElementSibling; // direkter Zugriff auf Fehler-Container
+
+let errorMessageMail = [];
+
+inputMail.addEventListener("input", checkInputMail);
+document.forms[0].addEventListener("submit", function (e) {
+    e.preventDefault();
+    checkInputMail();
+});
+
+
+function checkInputMail() {
+    let errorMail = [];
+    errorMessageMail.length = 0; // Zurücksetzen
+
+    errorMail.push(checkEmpty(inputMail, errorMessageMail));
+    errorMail.push(checkMinMax(inputMail, 3, 100, errorMessageMail));
+    errorMail.push(checkMail(inputMail, errorMessageMail));
+
+    if (errorMail.includes(false)) {
+        inputMail.classList.add("error");
+        errorDivMail.textContent = errorMessageMail.join("");
+        inputMail.focus(); // Fokus setzen
+    } else {
+        inputMail.classList.remove("error");
+        errorDivMail.textContent = "";
+    }
+}
+
+function checkEmpty(inp, arrayMessage) {
+    if (inp.value.trim() === "") {
+        arrayMessage[0] = "Das ist ein Pflichtfeld\n";
+        return false;
+    } else {
+        arrayMessage[0] = "";
+        return true;
+    }
+}
+
+function checkMinMax(inp, min, max, arrayMessage) {
+    if (inp.value.length < min) {
+        arrayMessage[1] = `Mindestens ${min} Zeichen\n`;
+        return false;
+    } else if (inp.value.length > max) {
+        arrayMessage[2] = `Maximal ${max} Zeichen\n`;
+        return false;
+    } else {
+        arrayMessage[1] = "";
+        arrayMessage[2] = "";
+        return true;
+    }
+}
+
+function checkMail(inp, arrayMessage) {
+    if (!regMail.test(inp.value)) {
+        arrayMessage[3] = "Format ungültig\n";
+        return false;
+    } else {
+        arrayMessage[3] = "";
+        return true;
+    }
 }

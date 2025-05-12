@@ -1,4 +1,5 @@
 # Green Trace – CO₂ Emissions Dashboard
+# https://clia7.github.io/IPWA01-CasyStudy-CO2-Footprint/
 
 This repository contains the source code for the project *Green Trace*, developed as part of the course **Project: Web Programming (DLBUXPWP01)** at IU International University of Applied Sciences.  
 The goal of the project is to visualize global CO₂ emissions data from companies across different countries and sectors.

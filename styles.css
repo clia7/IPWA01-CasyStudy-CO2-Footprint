@@ -49,3 +49,15 @@ footer a {
   #back_btn:hover {
     transform: scale(1.5);
   }
+
+  /*Fot Contact Form Validation*/
+.errorDiv {
+    color: red;
+    font-size: 0.6em;
+    white-space: pre-wrap;
+}
+
+input.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
