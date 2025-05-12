@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <main class="container mt-5 pt-5 mt-md-3 pt-md-3 mt-sm-2 pt-sm-2">
+    <main class="container mt-5 pt-5 mt-md-3 pt-md-3 mt-sm-2 pt-sm-2"> <!--HERO SLIDER-->
         <div id="heroslider" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#heroslider" data-bs-slide-to="0" class="active"
@@ -67,7 +67,7 @@
             </button>
         </div>
 
-        <section id="aboutus">
+        <section id="aboutus"> <!--ABOUT US-->
             <h1 class="display-1">Green Trace</h1>
             <div class="aboutus_content m-5">
                 <p>We are non-profit organization dedicated to increasing transparency in the global fight
@@ -84,116 +84,124 @@
                     and policymakers to make informed decisions and take meaningful climate action.
                     Together, we can trace emissions — and drive change.</p>
             </div>
-            <div class="team_content p-5">
+            <div class="team_content p-5"> <!--TEAM CARDS-->
                 <h2>Our Team</h2>
-                <div class="card text-center rounded mx-2 bg-white shadow-lg" data-bs-toggle="modal"
-                    data-bs-target="#modalLea">
-                    <img src="img/persona1.png" class="card-img-top" alt="illustration of a woman">
-                    <div class="card-body d-none d-md-block">
-                        <h3>Lea Santos – Data Analyst</h3>
-                        <p>Lea is passionate about turning numbers into meaningful insights. With
-                            a
-                            background in environmental science and data visualization, she’s responsible for
-                            analyzing
-                            and structuring CO<sub>2</sub> data from global sources. Her mission: making complex
-                            data simple
-                            and
-                            accessible for everyone.</p>
-                    </div>
-                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-stretch gap-4">
 
-                <div class="modal fade" id="modalLea" tabindex="-1" aria-labelledby="modalLeaLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalLeaLabel">Lea Santos – Data Analyst</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Lea is passionate about turning numbers into meaningful insights. With a background in
+                    <div class="card text-center rounded bg-white shadow-lg mx-auto mb-4">
+                        <div class="d-block d-md-none" data-bs-toggle="modal" data-bs-target="#modalLea"
+                            style="cursor: pointer;">
+                            <img src="img/persona1.png" class="card-img-top" alt="illustration of a woman">
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img src="img/persona1.png" class="card-img-top" alt="illustration of a woman">
+                        </div>
+                        <div class="card-body d-none d-md-block">
+                            <h3>Lea Santos – Data Analyst</h3>
+                            <p>Lea is passionate about turning numbers into meaningful insights. With a background in
                                 environmental science and data visualization, she’s responsible for analyzing and
                                 structuring CO<sub>2</sub> data from global sources. Her mission: making complex data
-                                simple and accessible for everyone.
+                                simple and accessible for everyone.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalLea" tabindex="-1" aria-labelledby="modalLeaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalLeaLabel">Lea Santos – Data Analyst</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Lea is passionate about turning numbers into meaningful insights. With a background
+                                    in environmental science and data visualization, she’s responsible for analyzing and
+                                    structuring CO<sub>2</sub> data from global sources. Her mission: making complex
+                                    data simple and accessible for everyone.
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="card text-center rounded mx-2 bg-white shadow-lg" data-bs-toggle="modal"
-                    data-bs-target="#modalJonas">
-                    <img src="img/persona2.png" class="card-img-top" alt="illustration of a man">
-                    <div class="card-body d-none d-md-block">
-                        <h3>Jonas Weber – Project Coordinator</h3>
-                        <p>Jonas keeps the team and project on track. With a background in
-                            nonprofit
-                            management and communication, he connects partners, oversees timelines, and ensures the
-                            Green Trace platform continuously evolves in response to user feedback and climate data
-                            developments.</p>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="modalJonas" tabindex="-1" aria-labelledby="modalJonasLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalJonasLabel">Jonas Weber – Project Coordinator</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Jonas keeps the team and project on track. With a background in
-                                nonprofit
-                                management and communication, he connects partners, oversees timelines, and ensures the
-                                Green Trace platform continuously evolves in response to user feedback and climate data
-                                developments.</div>
+                    <div class="card text-center rounded bg-white shadow-lg mx-auto mb-4">
+                        <div class="d-block d-md-none" data-bs-toggle="modal" data-bs-target="#modalJonas"
+                            style="cursor: pointer;">
+                            <img src="img/persona2.png" class="card-img-top" alt="illustration of a man">
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img src="img/persona2.png" class="card-img-top" alt="illustration of a man">
+                        </div>
+                        <div class="card-body d-none d-md-block">
+                            <h3>Jonas Weber – Project Coordinator</h3>
+                            <p>Jonas keeps the team and project on track. With a background in nonprofit management and
+                                communication, he connects partners, oversees timelines, and ensures the Green Trace
+                                platform continuously evolves in response to user feedback and climate data
+                                developments.</p>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="card text-center rounded mx-2 bg-white shadow-lg" data-bs-toggle="modal"
-                    data-bs-target="#modalNora">
-                    <img src="img/persona3.png" class="card-img-top" alt="illustration of a woman">
-                    <div class="card-body d-none d-md-block">
-                        <h3>Nora Takahashi – Design & UX Lead</h3>
-                        <p>Nora brings life to the user experience of Green Trace. With a strong
-                            focus
-                            on accessibility and clarity, she ensures that users can navigate the platform with ease
-                            across all devices. Her minimalist design approach keeps the focus on what truly
-                            matters:
-                            transparency and impact.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="modalNora" tabindex="-1" aria-labelledby="modalNoraLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalNoraLabel">Nora Takahashi – Design & UX Lead</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                    <div class="modal fade" id="modalJonas" tabindex="-1" aria-labelledby="modalJonasLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalJonasLabel">Jonas Weber – Project Coordinator</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Jonas keeps the team and project on track. With a background in nonprofit management
+                                    and communication, he connects partners, oversees timelines, and ensures the Green
+                                    Trace platform continuously evolves in response to user feedback and climate data
+                                    developments.
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                Nora brings life to the user experience of Green Trace. With a strong
-                                focus
-                                on accessibility and clarity, she ensures that users can navigate the platform with ease
+                        </div>
+                    </div>
+
+                    <div class="card text-center rounded bg-white shadow-lg mx-auto mb-4">
+                        <div class="d-block d-md-none" data-bs-toggle="modal" data-bs-target="#modalNora"
+                            style="cursor: pointer;">
+                            <img src="img/persona3.png" class="card-img-top" alt="illustration of a woman">
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img src="img/persona3.png" class="card-img-top" alt="illustration of a woman">
+                        </div>
+                        <div class="card-body d-none d-md-block">
+                            <h3>Nora Takahashi – Design & UX Lead</h3>
+                            <p>Nora brings life to the user experience of Green Trace. With a strong focus on
+                                accessibility and clarity, she ensures that users can navigate the platform with ease
                                 across all devices. Her minimalist design approach keeps the focus on what truly
-                                matters:
-                                transparency and impact.</div>
+                                matters: transparency and impact.</p>
                         </div>
                     </div>
-                </div>
 
-            </div>
+
+                    <div class="modal fade" id="modalNora" tabindex="-1" aria-labelledby="modalNoraLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalNoraLabel">Nora Takahashi – Design & UX Lead</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Nora brings life to the user experience of Green Trace. With a strong focus on
+                                    accessibility and clarity, she ensures that users can navigate the platform with
+                                    ease across all devices. Her minimalist design approach keeps the focus on what
+                                    truly matters: transparency and impact.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
-        <section id="information" class="py-5 bg-light">
+        <section id="information" class="py-5 bg-light"> <!--INFORMATION SECTION-->
             <div class="container">
                 <h2 class="mb-4 text-center">What is CO₂?</h2>
                 <div class="row align-items-center mb-5">
@@ -252,11 +260,12 @@
                     <li class="list-group-item">Supporting carbon-neutral or low-emission products</li>
                 </ul>
             </div>
+            </div>
         </section>
 
 
 
-        <section id="dataOverview">
+        <section id="dataOverview"> <!--TABLE WITH DATA-->
             <div class="dataOverview_content m-5">
                 <h2>Data Overview</h2>
                 <p>
@@ -280,7 +289,7 @@
                 <div class="table-responsive-md">
                     <table id="emissionTable" class="table table-striped table-hover">
                         <thead>
-                            <tr>
+                            <tr> <!--SORT FUNCTION-->
                                 <th onclick="sortFunction(0)" style="cursor:pointer">Country</th>
                                 <th onclick="sortFunction(1)" style="cursor:pointer">Company</th>
                                 <th onclick="sortFunction(2)" style="cursor:pointer">Sector</th>
@@ -295,7 +304,7 @@
         </section>
 
 
-        <section id="collectingData" class="py-5 bg-light">
+        <section id="collectingData" class="py-5 bg-light"> <!--COLLECTION DATA SECTION-->
             <div class="container">
                 <div class="row align-items-center mb-4">
                     <div class="col-md-6">
@@ -333,14 +342,14 @@
             </div>
         </section>
 
-        <section id="contact" class="container my-5">
+        <section id="contact" class="container my-5"> <!--CONTACT SECTION-->
             <div class="contact_content m-5">
                 <h2>Get in Touch</h2>
                 <p>Have questions, feedback, or want to collaborate?
                     We’d love to hear from you! Just fill out the form below and we’ll get back to you as soon as
                     possible.</p>
 
-                <div class="row g-5 align-items-start mb-5">
+                <div class="row g-5 align-items-start mb-5"> <!--CONTACT FORM-->
                     <div class="col-md-6">
                         <form action="#" method="post">
                             <div class="mb-3">
@@ -392,7 +401,7 @@
             </div>
         </section>
 
-
+        <!--BACK TO TOP -->
         <button onclick="topFunction()" id="back_btn" type="button" class="btn btn-light"><svg
                 xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#78A75A">
                 <path
