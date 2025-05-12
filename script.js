@@ -127,7 +127,7 @@ function sortFunction(columnIndex) {
 const regMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 const inputMail = document.querySelector('#email');
-const errorDivMail = inputMail.nextElementSibling; // direkter Zugriff auf Fehler-Container
+const errorDivMail = inputMail.nextElementSibling;
 
 let errorMessageMail = [];
 
@@ -140,7 +140,7 @@ document.forms[0].addEventListener("submit", function (e) {
 
 function checkInputMail() {
     let errorMail = [];
-    errorMessageMail.length = 0; // Zurücksetzen
+    errorMessageMail.length = 0; 
 
     errorMail.push(checkEmpty(inputMail, errorMessageMail));
     errorMail.push(checkMinMax(inputMail, 3, 100, errorMessageMail));
@@ -149,7 +149,7 @@ function checkInputMail() {
     if (errorMail.includes(false)) {
         inputMail.classList.add("error");
         errorDivMail.textContent = errorMessageMail.join("");
-        inputMail.focus(); // Fokus setzen
+        inputMail.focus(); 
     } else {
         inputMail.classList.remove("error");
         errorDivMail.textContent = "";
@@ -158,7 +158,7 @@ function checkInputMail() {
 
 function checkEmpty(inp, arrayMessage) {
     if (inp.value.trim() === "") {
-        arrayMessage[0] = "Das ist ein Pflichtfeld\n";
+        arrayMessage[0] = "This is a required field\n";
         return false;
     } else {
         arrayMessage[0] = "";
