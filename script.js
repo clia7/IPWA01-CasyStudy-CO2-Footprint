@@ -168,10 +168,10 @@ function checkEmpty(inp, arrayMessage) {
 
 function checkMinMax(inp, min, max, arrayMessage) {
     if (inp.value.length < min) {
-        arrayMessage[1] = `Mindestens ${min} Zeichen\n`;
+        arrayMessage[1] = `At least ${min} characters\n`;
         return false;
     } else if (inp.value.length > max) {
-        arrayMessage[2] = `Maximal ${max} Zeichen\n`;
+        arrayMessage[2] = `Maximum ${max} characters\n`;
         return false;
     } else {
         arrayMessage[1] = "";
@@ -182,7 +182,7 @@ function checkMinMax(inp, min, max, arrayMessage) {
 
 function checkMail(inp, arrayMessage) {
     if (!regMail.test(inp.value)) {
-        arrayMessage[3] = "Format ungültig\n";
+        arrayMessage[3] = "Format invalid\n";
         return false;
     } else {
         arrayMessage[3] = "";
