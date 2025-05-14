@@ -29,12 +29,8 @@ p {
     transform: scale(1.05);
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
-}
 
-/*Back to top Button*/
+/*BACK TO TOP BUTTON*/
 #back_btn {
     display: none;
     position: fixed;
@@ -50,7 +46,7 @@ footer a {
     transform: scale(1.5);
   }
 
-  /*Contact Form Validation*/
+  /*ERROR MESSAGES EMAIL VALIDATION*/
 .errorDiv {
     color: red;
     font-size: 0.6em;
