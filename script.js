@@ -46,25 +46,30 @@ if (rtlLangs.some(code => userLang.startsWith(code))) {
 }
 
   // INSERT JSON DATA INTO HTML TABLE
-  fetch('co2_emissions_data.json')
-    .then(response => response.json())
-    .then(data => {
-        const tableData = document.getElementById("tableData");
+fetch('co2_emissions_data.json')
+  .then(response => response.json())
+  .then(data => {
+    const tableData = document.getElementById("tableData");
 
-        data.forEach(entry => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-            <td>${entry.country}</td>
-            <td>${entry.company}</td>
-            <td>${entry.sector}</td>
-            <td>${entry.emissions_mt}</td>
-            <td>${entry.year}</td>
-            `;
+    data.forEach(entry => {
+      const row = document.createElement('tr');
 
-            tableData.appendChild(row);
-        });
-    })
-    .catch(error => console.error('Error loading JSON:', error));
+      const createCell = text => {
+        const td = document.createElement("td");
+        td.textContent = text;
+        return td;
+      };
+
+      row.appendChild(createCell(entry.country));
+      row.appendChild(createCell(entry.company));
+      row.appendChild(createCell(entry.sector));
+      row.appendChild(createCell(entry.emissions_mt));
+      row.appendChild(createCell(entry.year));
+
+      tableData.appendChild(row);
+    });
+  })
+  .catch(error => console.error('Error loading JSON:', error));
 
 
   //SEARCH TABLE

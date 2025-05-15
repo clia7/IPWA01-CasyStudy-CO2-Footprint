@@ -29,7 +29,6 @@ p {
     transform: scale(1.05);
 }
 
-
 /*BACK TO TOP BUTTON*/
 #back_btn {
     display: none;
@@ -51,9 +50,4 @@ p {
     color: red;
     font-size: 0.6em;
     white-space: pre-wrap;
-}
-
-input.error {
-    border: 2px solid red;
-    background-color: #ffe6e6;
 }
