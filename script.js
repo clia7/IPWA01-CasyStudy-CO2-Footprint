@@ -157,6 +157,11 @@ function checkInputMail() {
     } else {
         inputMail.classList.remove("error");
         errorDivMail.textContent = "";
+
+        const safeEmail = escapeHTML(inputMail.value);
+
+
+        console.log("filtered input", safeEmail);
     }
 }
 
@@ -192,4 +197,14 @@ function checkMail(inp, arrayMessage) {
         arrayMessage[3] = "";
         return true;
     }
+}
+
+//ESCAPE FUNCTION
+function escapeHTML(input) {
+  return input
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
